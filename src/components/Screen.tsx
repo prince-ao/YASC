@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     display: "flex",
     flexDirection: "row-reverse",
-    alignItems: "center"
+    alignItems: "center",
+    marginRight: -30,
   },
   text: {
     fontSize: 40

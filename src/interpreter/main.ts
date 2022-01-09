@@ -5,7 +5,6 @@ import { interpretAST } from "./interpret";
 
 export const calculate = (s: string) => {
   let x: token[] = parse(s)
-  console.log(x);
   let y: ASTNode | undefined = binexpr(x, 0)
   let p: ASTNode = {
     op: 0,
@@ -13,6 +12,5 @@ export const calculate = (s: string) => {
     right: undefined,
     intvalue: 0
   }
-  console.log(y || p)
   return interpretAST(y || p);
 }

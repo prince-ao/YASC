@@ -19,7 +19,7 @@ const Buttons = ({changeScreen, execute, deleteEverything}: funcParam) => {
     deleteEverything();
   }
   return (
-    <View>
+    <View style={{backgroundColor: "grey", height: "100%"}}>
       <View style={styles.arithRow}>
         <TouchableOpacity onPress={() => handlePress("+")} style={styles.button}>
           <Text style={{...styles.buttonText }}>+</Text>
@@ -94,7 +94,8 @@ const styles = StyleSheet.create({
   arithRow: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-around"
+    justifyContent: "space-around",
+    marginTop: 30,
   },
   button: {
     backgroundColor: "#c8ad7f",
@@ -122,6 +123,7 @@ const styles = StyleSheet.create({
   },
   exContainer: {
     display: "flex",
-    justifyContent: "flex-end"
+    flexDirection: "column-reverse",
+    justifyContent: "space-around"
   }
 })

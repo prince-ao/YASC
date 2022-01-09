@@ -12,7 +12,6 @@ const Calculator = () => {
   }
 
   const execute = () => {
-    console.log(screen + ".")
     let x: number = calculate(screen + ".");
     setScreen(`${x}`);
     setIndex(0);
