@@ -16,4 +16,4 @@
 - run ``` yarn start ```
 
 ## Contribution
-All and any contribution welcomed.
+Any and all contribution are welcomed.
